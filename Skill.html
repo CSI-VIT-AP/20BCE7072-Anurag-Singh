@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Skills</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<style>
+
+a:link {
+  color: brown;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ADD8E6;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: violet;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: pink;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+</style>
+</head>
+
+<body style="background-image: url('https://img.freepik.com/free-vector/white-abstract-background_23-2148810113.jpg?size=626&ext=jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size:100% 100%;">
+
+<canvas id="myChart" style="width:100%;"></canvas>
+
+<script>
+var xValues = ["Java", "Python", "R", "C", "HTML", "CSS", "Java-Script", ];
+var yValues = [92, 80, 60, 75, 70, 65, 50,];
+var barColors = ["pink","red", "green","blue","orange","brown","yellow"];
+
+new Chart("myChart", {
+  type: "horizontalBar",
+  data: {
+  labels: xValues,
+  datasets: [{
+    backgroundColor: barColors,
+    data: yValues
+  }]
+},
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "My Skills"
+    },
+    scales: {
+      xAxes: [{ticks: {min: 10, max:100}}]
+    }
+  }
+});
+</script>
+</body>
+</html>

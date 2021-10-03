@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>About</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0; background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 400px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 15px;
+  margin-top: -27px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+a:link {
+  color: brown;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ADD8E6;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: violet;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: pink;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+</style>
+</head>
+
+<body background="D:\abc.jpeg">
+  
+  <fieldset style="margin: 0px; padding: 0px; overflow:auto; height: 100%; box-sizing:border; border: 1px solid red; border-radius:0px; border-style: hidden;">
+  <h1 style="font-size: 30px; margin: 0px; padding:7px 0px 0px 3px; color:green; position:relative; top:5px; left:-7px; box-sizing:border; border: 2px solid red; border-radius:3px; border-style:none; background-color:none;"><b><marquee behavior="alternate" direction="left" onMouseOver="this.stop()" onMouseOut="this.start()"> Here is the Information about me. </marquee></b></h1>  	
+
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="https://scontent.flko7-1.fna.fbcdn.net/v/t1.6435-9/90199793_2744035195883040_6439479908962926592_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=EEnpUfAMqjsAX-flWjr&_nc_ht=scontent.flko7-1.fna&oh=aa4703c103d00d0b49050c56ea1edc2c&oe=617AA8EE" style="width:400px; height:400px; border-radius:20px;">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://scontent.fvns1-2.fna.fbcdn.net/v/t1.6435-9/240960107_3209551279331427_8337534735778948715_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=wjgeC_vx1lEAX_c9lfK&_nc_ht=scontent.fvns1-2.fna&oh=8f47af31a50e3a7c3c4310d4f0d12cd6&oe=61787C68" style="width:400px; height:400px; border-radius:20px;">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://scontent.fvns1-1.fna.fbcdn.net/v/t1.6435-9/p843x403/223530737_3176840445935844_5925942758235691159_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=AVtDjo5iz1wAX9uyzp-&_nc_ht=scontent.fvns1-1.fna&oh=1f32532b93581f49f7f661502a4d0f1a&oe=61780C9D" style="width:400px; height:400px; border-radius:20px;">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center; margin-right:-10px;">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<center><fieldset style=" background-color:white; margin-top:25px; margin-left:0px; width:90%; height:100%; box-sizing: border-box; border: 4px solid red; border-radius: 2px; border-style: dashed solid;">
+<h1 style="font-size:20px; color:red; "> <b> I'm Anurag Singh from Computer Science and Engineerin (Core) Department in Vellore Institute of Technology, Andra Pradesh. </b> </h1> 
+<h1 style="font-size:20px; color:red; "> <b> My core interest fully lies in Artificial Intelligence(Machine and Deep Learning), Cybersecurties and Robotics, apart from all these I am intersested in Graphic Design, UI/UX design and App Development. </b> </h1> 
+<h1 style="font-size:20px; color:red; "> <b> I also love solving logic and structure of coding and always strive to write elegant and efficient code, whether it be Java, Python, R, C, XML, HTML, CSS, Javascript etc. </b> </h1> 
+<h1 style="font-size:20px; color:red; "><b>I'm part of the Computer Society of India Chaper/Club in VITAP, where with the help of my mates and leads, I am trying to learn awesome tools and gain tech knowledge from their experience.</b> </h1> 
+<br><hr style=" height: 3px; background: green;">
+<br><h1 style="font-size:20px; color:red; float:left; "><i> Bithday : - 23 / March / 2003 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; </i><h1>
+<h1 style="font-size:20px; color:red; float:left; "> <i> Mobile No. - 7317615182 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;</i> <h1>
+<h1 style="font-size:20px; color:red; float:left; "> <i> City/Town :- Kaptanganj, Kushinagar, Uttar Pradesh, India </i> <h1>
+<h1 style="font-size:20px; color:red; float:left; "> <i> Email :- anuragsinghrajsingh@gmail.com </i> <h1>
+</fieldset></center>
+
+</fieldset>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
